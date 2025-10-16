@@ -1,0 +1,114 @@
+.layout {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .leftBox {
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      box-sizing: border-box;
+      padding: 0 10px;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 2vh;
+      .leftItem {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        background: var(--bg);
+        box-shadow: var(--shadow-m);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        .leftTitle {
+          width: 100%;
+          height: 100%;
+          flex: 2;
+          display: flex;
+          align-items: center;
+          font-size: 19px;
+          box-sizing: border-box;
+          padding-left: 20px;
+          .leftTexts {
+            padding-left: 10px;
+            color: var(--text);
+          }
+        }
+        .leftContent {
+          width: 100%;
+          height: 100%;
+          flex: 4;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          box-sizing: border-box;
+          padding: 0 30px;
+          color: var(--text);
+          font-size: 18px;
+          .leftContentRight {
+            background: var(--bg-light);
+            padding: 4px 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow-m);
+          }
+        }
+      }
+    }
+    .rightBox {
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 0 10px;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      gap: 2vh;
+      .rightItem {
+        width: 100%;
+        height: 100%;
+        background: var(--bg);
+        box-shadow: var(--shadow-m);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        .rightTitle {
+          width: 100%;
+          height: 100%;
+          flex: 2;
+          display: flex;
+          align-items: center;
+          font-size: 19px;
+          box-sizing: border-box;
+          padding-left: 20px;
+          .rightTexts {
+            padding-left: 10px;
+            color: var(--text);
+          }
+        }
+        .rightContent {
+          flex: 6;
+          width: 100%;
+          height: 100%; 
+          font-size: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .radioStyle {
+            display: flex;
+            gap: 80px;
+          }
+          .radioText {
+            color: var(--text) !important;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
